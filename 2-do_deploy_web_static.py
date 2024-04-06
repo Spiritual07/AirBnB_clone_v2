@@ -3,7 +3,6 @@
 
 from fabric.api import run, env, put, sudo
 from os.path import exists
-from os import remove
 
 env.hosts = ["107.23.58.213", "54.198.48.244"]
 
@@ -29,7 +28,7 @@ def do_deploy(archive_path):
         run('tar -xzf /tmp/{} -C {}'.format(archive_filename, target_folder))
         run('rm /tmp/{}'.format(archive_filename))
         run('sudo rm -rf /data/web_static/current')
-        run('ln -s -f {} /data/web_static/current'.format(target_folder))
+        run('ln -s {} /data/web_static/current'.format(target_folder))
 
         return True
     except Exception as e:
