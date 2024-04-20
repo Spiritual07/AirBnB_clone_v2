@@ -3,7 +3,7 @@
 The application listens on 0.0.0.0, port 5000.
 Routes: '/'
 Displays 'Hello HBNB!'.
-Routes: /hbnb 
+Routes: /hbnb
 Displays 'HBNB'.
 """
 from flask import Flask
