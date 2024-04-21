@@ -9,7 +9,7 @@ Route: /c/<text>
 Displays 'C' followed by the value of <text>.
 Routes: /python/(<text>)
 Displays 'Python' followed by the value of <text>.
-Routes: /number/<n> 
+Routes: /number/<n>
 Displays 'n is a number' only if <n> is an integer.
 """
 from flask import Flask
