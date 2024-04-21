@@ -11,7 +11,7 @@ Routes: /python/(<text>)
 Displays 'Python' followed by the value of <text>.
 Routes: /number/<n>
 Displays 'n is a number' only if <n> is an integer.
-Routes: /number_template/<n> 
+Routes: /number_template/<n>
 Displays an HTML page only if <n> is an integer.
 """
 from flask import Flask, render_template
